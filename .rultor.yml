@@ -1,0 +1,9 @@
+architect:
+  - kerelape
+
+merge:
+  commanders:
+    - kerelape
+  
+  script:
+    - "gradle test"
