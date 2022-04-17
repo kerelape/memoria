@@ -4,6 +4,6 @@ architect:
 merge:
   commanders:
     - kerelape
-  
+
   script:
     - "gradle test"
