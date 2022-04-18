@@ -10,4 +10,6 @@ repositories {
 dependencies {
     api(module("me.kerelape.memoria:memoria-core"))
     api(module("org.cactoos:cactoos:0.49"))
+
+    testImplementation(kotlin("test"))
 }
