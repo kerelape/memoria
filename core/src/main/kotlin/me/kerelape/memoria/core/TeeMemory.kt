@@ -3,7 +3,7 @@ package me.kerelape.memoria.core
 /**
  * Memory that writes value to [destination] when it's read from [origin]
  */
-class TeeMemory<T>(private val origin: Memory<T>, private val destination: Memory<T>) : Memory<T> {
+class TeeMemory<T>(private val origin: MutableMemory<T>, private val destination: MutableMemory<T>) : MutableMemory<T> {
 
     override fun write(value: T) {
         this.origin.write(value)

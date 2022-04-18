@@ -1,3 +1,3 @@
 package me.kerelape.memoria.core
 
-interface BytesMemory : Memory<ByteArray>
+interface BytesMemory : MutableMemory<ByteArray>

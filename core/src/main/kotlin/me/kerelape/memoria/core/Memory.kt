@@ -1,11 +1,6 @@
 package me.kerelape.memoria.core
 
-interface Memory<T> {
-
-    /**
-     * Saves the [value]
-     */
-    fun write(value: T)
+interface Memory<out T> {
 
     /**
      * @return Stored value
