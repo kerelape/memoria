@@ -1,5 +1,6 @@
 package me.kerelape.memoria.core
 
+import me.kerelape.memoria.core.primitives.StringMemory
 import org.junit.Test
 import kotlin.test.assertEquals
 
