@@ -1,6 +1,6 @@
-# memoria
+# Memoria
 
-Objects that abstract memory inspired by @yegor256 talks  
+Why should object care about where to store their bytes?
 
 ## Examples
 ### Immutable cache (persistent)
