@@ -2,6 +2,7 @@ package me.kerelape.memoria.core.primitives
 
 import me.kerelape.memoria.core.BytesMemory
 import me.kerelape.memoria.core.Memory
+import me.kerelape.memoria.core.MutableMemory
 import java.nio.charset.Charset
 
 class StringMemory(private val memory: BytesMemory, private val charset: Charset) : MutableMemory<String> {
