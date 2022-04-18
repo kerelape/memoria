@@ -1,7 +1,6 @@
 package me.kerelape.memoria.core.primitives
 
 import me.kerelape.memoria.core.BytesMemory
-import me.kerelape.memoria.core.Memory
 import me.kerelape.memoria.core.MutableMemory
 import java.nio.ByteBuffer
 
