@@ -1,5 +1,7 @@
-package me.kerelape.memoria.core
+package me.kerelape.memoria.core.primitives
 
+import me.kerelape.memoria.core.BytesMemory
+import me.kerelape.memoria.core.Memory
 import java.nio.charset.Charset
 
 class StringMemory(private val memory: BytesMemory, private val charset: Charset) : Memory<String> {
