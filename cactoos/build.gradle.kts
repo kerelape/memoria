@@ -3,12 +3,11 @@ plugins {
     kotlin("jvm") version "1.6.20"
 }
 
-group = "me.kerelape.memoria"
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    api(module("me.kerelape.memoria:memoria-core"))
+    api(module("org.cactoos:cactoos"))
 }

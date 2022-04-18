@@ -12,6 +12,11 @@
                   <project path="$PROJECT_DIR$/core" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/cactoos" name="memoria-cactoos">
+                <projects>
+                  <project path="$PROJECT_DIR$/cactoos" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -21,6 +26,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/cactoos" />
             <option value="$PROJECT_DIR$/core" />
           </set>
         </option>
