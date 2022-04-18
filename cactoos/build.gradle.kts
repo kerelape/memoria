@@ -9,5 +9,5 @@ repositories {
 
 dependencies {
     api(module("me.kerelape.memoria:memoria-core"))
-    api(module("org.cactoos:cactoos"))
+    api(module("org.cactoos:cactoos:0.49"))
 }
