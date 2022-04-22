@@ -4,7 +4,7 @@ name: publish
 
 on:
   release:
-    [ created ]
+    types: [created]
 
 jobs:
   test:
