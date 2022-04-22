@@ -19,19 +19,17 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Test
-      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
-      with:
-        arguments: test
+      run: |
+        ./gradlew test
     - name: Get tag
       id: tag
       uses: dawidd6/action-get-tag@v1
       with:
         strip_v: false
     - name: Publish
-      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
-      with:
-        arguments: publish
+      run: |
+        ./gradlew publish
       env:
-        GITHUB_USERNAME: ${{ secrets.PUBLISH_GITHUB_USERNAME }}
-        GITHUB_PASSWORD: ${{ secrets.PUBLISH_GITHUB_PASSWORD }}
-        PACKAGE_VERSION: ${{ steps.tag.outputs.tag }}
+        PUBLISH_GITHUB_USERNAME: ${{ secrets.PUBLISH_GITHUB_USERNAME }}
+        PUBLISH_GITHUB_PASSWORD: ${{ secrets.PUBLISH_GITHUB_PASSWORD }}
+        PUBLISH_PACKAGE_VERSION: ${{ steps.tag.outputs.tag }}
