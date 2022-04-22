@@ -6,7 +6,6 @@ plugins {
 }
 
 group = "me.kerelape.memoria"
-version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -39,7 +38,7 @@ publishing {
         create<MavenPublication>("GitHubPackages") {
             groupId = project.group as String
             artifactId = rootProject.name
-            version = project.version as String
+            version = System.getenv("PACKAGE_VERSION")
         }
     }
 }
