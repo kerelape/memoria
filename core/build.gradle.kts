@@ -26,7 +26,7 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/kerelape/memoria")
             credentials {
-                username = System.getenv("PUBLISH_GITHUB_USERNAME")
+                username = "kerelape"
                 password = System.getenv("PUBLISH_GITHUB_PASSWORD")
             }
         }
