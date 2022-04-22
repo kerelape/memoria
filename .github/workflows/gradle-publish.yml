@@ -32,6 +32,6 @@ jobs:
       with:
         arguments: publish
       env:
-        GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-        GITHUB_PASSWORD: ${{ secrets.GITHUB_PASSWORD }}
+        GITHUB_USERNAME: ${{ secrets.PUBLISH_GITHUB_USERNAME }}
+        GITHUB_PASSWORD: ${{ secrets.PUBLISH_GITHUB_PASSWORD }}
         PACKAGE_VERSION: ${{ steps.tag.outputs.tag }}
