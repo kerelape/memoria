@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-group = "me.kerelape.memoria"
+group = "me.kerelape"
 
 repositories {
     mavenCentral()
@@ -29,7 +29,7 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/kerelape/memoria")
             credentials {
-                username = "kerelape"
+                username = System.getenv("PUBLISH_GITHUB_USERNAME")
                 password = System.getenv("PUBLISH_GITHUB_PASSWORD")
             }
         }
