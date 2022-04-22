@@ -25,7 +25,7 @@ jobs:
       id: tag
       uses: dawidd6/action-get-tag@v1
       with:
-        strip_v: false
+        strip_v: true
     - name: Publish
       run: |
         ./gradlew publish
