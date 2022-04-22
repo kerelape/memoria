@@ -29,8 +29,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/kerelape/memoria")
             credentials {
-                username = System.getenv("GITHUB_USERNAME")
-                password = System.getenv("GITHUB_PASSWORD")
+                username = System.getenv("PUBLISH_GITHUB_USERNAME")
+                password = System.getenv("PUBLISH_GITHUB_PASSWORD")
             }
         }
     }
@@ -38,7 +38,7 @@ publishing {
         create<MavenPublication>("GitHubPackages") {
             groupId = project.group as String
             artifactId = rootProject.name
-            version = System.getenv("PACKAGE_VERSION")
+            version = System.getenv("PUBLISH_PACKAGE_VERSION")
         }
     }
 }
