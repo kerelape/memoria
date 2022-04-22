@@ -22,4 +22,21 @@ class OutputMemoryTest {
             StringMemory(memory).value()
         )
     }
+
+    /**
+     * Issue #7
+     */
+    @Test
+    fun `doesn't append with multiple streams`() {
+        val string = "abc"
+        val memory = RamMemory()
+        with(OutputMemory(memory)) {
+            OutputStreamTo(this).write(string.toByteArray())
+            OutputStreamTo(this).write(string.toByteArray())
+        }
+        assertEquals(
+            string,
+            StringMemory(memory).value()
+        )
+    }
 }
