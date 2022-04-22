@@ -5,13 +5,13 @@ merge:
   commanders:
     - kerelape
 
-  script:
-    - "gradle test"
+  script: |
+    ./gradlew test
 
 release:
   commanders:
     - kerelape
 
   script: |
-    gradle test
+    ./gradlew test
     git commit -am "${tag}"
