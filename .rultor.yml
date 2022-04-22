@@ -7,3 +7,11 @@ merge:
 
   script:
     - "gradle test"
+
+release:
+  commanders:
+    - kerelape
+
+  script: |
+    gradle test
+    git commit -am "${tag}"

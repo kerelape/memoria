@@ -5,3 +5,10 @@ tasks.register("test") {
         gradle.includedBuild("cactoos").task(":test")
     )
 }
+
+tasks.register("publish") {
+    dependsOn(
+        gradle.includedBuild("core").task(":publish"),
+        gradle.includedBuild("cactoos").task(":publish")
+    )
+}
