@@ -1,3 +1,6 @@
+> **Warning**
+> Functionality of this library is now in [reikai](https://github.com/kerelape/reikai)
+
 # <img src="https://raw.githubusercontent.com/kerelape/memoria/develop/memoria.png" height="64px" /> Memoria
 
 > Why should an object care about where to store their bytes?
